@@ -11,9 +11,11 @@ const volumeKicks = slider(1, 0, 1, 1);
 setcps(cps)
 
 samples({
-vecfx: 'sample_2.wav',
 tr: 'triangle.wav',
-}, 'https://raw.githubusercontent.com/janizzle/strudel_cc/main/');
+}, 'https://raw.githubusercontent.com/janizzle/strudel_cc/main/samples/instruments');
+samples({
+tr: 'triangle.wav',
+}, 'https://raw.githubusercontent.com/janizzle/strudel_cc/main/samples/melodies');
 
 stack(
   // VCE sample
