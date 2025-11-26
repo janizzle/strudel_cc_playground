@@ -12,10 +12,10 @@ setcps(cps)
 
 samples({
 tr: 'triangle.wav',
-}, 'https://raw.githubusercontent.com/janizzle/strudel_cc/main/samples/instruments');
+}, 'https://raw.githubusercontent.com/janizzle/strudel_cc_playground/main/samples/instruments/');
 samples({
-tr: 'triangle.wav',
-}, 'https://raw.githubusercontent.com/janizzle/strudel_cc/main/samples/melodies');
+vecfx: 'sample_2.wav',
+}, 'https://raw.githubusercontent.com/janizzle/strudel_cc_playground/main/samples/melodies/');
 
 stack(
   // VCE sample
@@ -29,7 +29,7 @@ stack(
   .lpf(lpfSampleSlider)
   .distort("2:0.8")
   .gain(0.1)
-  .scope(),
+  ._scope(),
 
   // bassline
  note("<f1 f1 c2 b0>")
