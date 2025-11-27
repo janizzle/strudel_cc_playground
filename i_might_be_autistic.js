@@ -28,7 +28,7 @@ stack(
   .room(1, 1)
   .lpf(lpfSampleSlider)
   .distort("2:0.8")
-  .gain(0.1)
+  .gain(0.3)
   ._scope(),
 
   // bassline
