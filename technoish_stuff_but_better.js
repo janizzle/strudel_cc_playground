@@ -8,6 +8,7 @@ $: note(irand(8))
   .decay(.3)
   .rib(12, 1)
   .slow(2)
+  .gain(.4)
   ._pianoroll()
 
 $: irand(8)
@@ -19,8 +20,6 @@ $: irand(8)
   .clip(2)
   .lpf(cat(2000, 5000))
   .gain(rand.range(0.3, 0.4))
-  .room(1, 1)
-  .roomsize(20)
   .rib(7, 2)
   ._pianoroll();
 
